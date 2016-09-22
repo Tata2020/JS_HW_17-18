@@ -1,0 +1,80 @@
+.carousel__title {
+	width: 728px;
+	margin: 10px auto;
+	background: #676734;
+	padding: 5px;
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+}
+.carousel__wrapper {
+	width: 728px;
+	margin: 10px auto;
+	padding: 9px;
+	border-radius: 5px;
+	border-color: #676734;
+	border: 2px solid;
+	overflow: hidden;
+}
+.carousel__hider {
+	width: 618px;
+	overflow: hidden;
+	float: left;
+	margin: 0px 10px;
+}
+.carousel__list {
+	width: 10000px;
+	position: relative;
+	padding: 0px;
+	overflow: hidden;
+}
+.carousel__item {
+	display: block;
+	float: left;
+	margin: 0px;
+}
+.carousel__item p {
+	padding: 3px;
+	text-align: center;
+	color: #676734;
+	font-size: 14px;
+}
+.carousel__img {
+	width: 200px;
+	height: 120px;
+	display: inline-block;
+	padding: 5px 3px;
+}
+.carousel__arrow {
+	float: left;
+    display: block;
+    padding: 5px 6px;
+    background-color: #676734;
+    margin-top: 50px;
+    border-radius: 50px;
+}
+.carousel__arrow:hover {
+    cursor: pointer;
+    background-color: grey;
+    border-radius: 50px;
+}
+.carousel__arrow span {
+	content: " ";
+    position: relative;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url(../img/arrows2.png) no-repeat;
+}
+.carousel__arrow--left span {
+    background-position: 2px -1px;
+}
+.carousel__arrow--left:hover span {
+    background-position: 2px -18px;
+} 
+.carousel__arrow--right span {
+    background-position: -14px -1px;
+}
+.carousel__arrow--right:hover span {
+    background-position: -12px -18px;
+}

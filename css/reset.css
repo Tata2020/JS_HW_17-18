@@ -17,7 +17,7 @@ menu, nav, output, section {
 	vertical-align: middle;
 }
 /* HTML5 display-role reset for older browsers */
-div, h1, h2, p, article, aside, details, figcaption, figure, 
+div, h1, h2, p,article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section, a {
 	display: block;
 	-webkit-box-sizing: border-box;
@@ -36,7 +36,6 @@ ul {
 	list-style: none;
 }
 a {
-	cursor: pointer;
 	text-decoration: none;
 }
 table {
