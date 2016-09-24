@@ -1,17 +1,68 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Script-Type" content="type">
 	<title>Homework 17-18</title>
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="dist/css/main.min.css">
+	
 	<script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="js/script.js"></script>
-
+	
+	<script type="text/javascript" src="dist/js/build.min.js" ></script>
 </head>
 <body>
-
+	<div class="wrapper">
+		<h1 class="carousel__title">My carousel with nature pictures</h1>
+		<div class="carousel__wrapper">
+			<a href="#" class="carousel__arrow carousel__arrow--left"><span></span></a>
+				<div class="carousel__hider">
+					<ul class="carousel__list">
+						<li class="carousel__item"><img class="carousel__img" src="src/img/image1.jpg" alt="picture"><p>Title image1</p></li>
+						<li class="carousel__item"><img class="carousel__img" src="src/img/image2.jpg" alt="picture"><p>Title image2</p></li>
+						<li class="carousel__item"><img class="carousel__img" src="src/img/image3.jpg" alt="picture"><p>Title image3</p></li>
+						<li class="carousel__item"><img class="carousel__img" src="src/img/image4.jpg" alt="picture"><p>Title image4</p></li>
+						<li class="carousel__item"><img class="carousel__img" src="src/img/image5.jpg" alt="picture"><p>Title image5</p></li>
+						<li class="carousel__item"><img class="carousel__img" src="src/img/image6.jpg" alt="picture"><p>Title image6</p></li>
+						<li class="carousel__item"><img class="carousel__img" src="src/img/image7.jpg" alt="picture"><p>Title image7</p></li>
+						<li class="carousel__item"><img class="carousel__img" src="src/img/image8.jpg" alt="picture"><p>Title image8</p></li>
+						<li class="carousel__item"><img class="carousel__img" src="src/img/image9.jpg" alt="picture"><p>Title image9</p></li>
+						<li class="carousel__item"><img class="carousel__img" src="src/img/image10.jpg" alt="picture"><p>Title image10</p></li>
+						<li class="carousel__item"><img class="carousel__img" src="src/img/image11.jpg" alt="picture"><p>Title image11</p></li>
+						<li class="carousel__item"><img class="carousel__img" src="src/img/image12.jpg" alt="picture"><p>Title image12</p></li>
+						<li class="carousel__item"><img class="carousel__img" src="src/img/image13.jpg" alt="picture"><p>Title image13</p></li>
+						<li class="carousel__item"><img class="carousel__img" src="src/img/image14.jpg" alt="picture"><p>Title image14</p></li>
+					</ul>
+				</div>
+			<a href="#" class="carousel__arrow carousel__arrow--right"><span></span></a>
+		</div>
+		<div class="form__wrapper">	
+			<script type="text/template" id="profile">
+				<div class="form__box">
+					<h1><%= data.name%></h1>
+					<img src="<%= data.users__photo%>">
+					<p class="study__place"><%= data.study_place%></p>
+				</div>
+				<div class="form__box">
+					<h4>Хочу учить фронтенд, потому что:</h4>
+					<ul class="list">
+						<% for (var i = 0; i < data.reasons.length; i++) { %>
+						<li><%= data.reasons[i]%></li>
+						<% }; %>
+					</ul>
+				</div>
+				<div class="form__box">
+					<h4>Мой контактный телефон</h4>
+					<p class="contact__item"><%= data.phone%></p>
+					<h4>Мой профиль в Фейсбуке</h4>
+					<p class="contact__item"><a href="<%= data.facebook_url%>" target="_blank">facebook.com</a></p>
+				</div>
+				<div class="form__box form__box--last">
+					<h4>Мой фидбек:</h4>
+					<p class="contact__item"><%= data.feedback%></p>
+				</div>
+			</script>
+		</div>
+ 	</div>
 </body>
 </html>

@@ -64,7 +64,7 @@
     display: inline-block;
     width: 17px;
     height: 17px;
-    background: url(../img/arrows2.png) no-repeat;
+    background: url(../../src/img/arrows2.png) no-repeat;
 }
 .carousel__arrow--left span {
     background-position: 2px -1px;

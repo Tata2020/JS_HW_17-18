@@ -7,7 +7,7 @@ $.fn.mycarousel = function(options) {
       textColor: '#676734',      //цвет подписи под картинкой
       borderColor: '#676734',    //цвет окантовки слайдра
       backgrArrow: '#676734',    //цвет фона стрелок навигации
-      speedSlider: 500           //скорость смены слайдов
+      speedSlider: 800           //скорость смены слайдов
     };
 
     var settings = $.extend(defaults, options);

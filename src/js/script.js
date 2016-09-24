@@ -1,18 +1,17 @@
 $(function() {
 $('.carousel__wrapper').mycarousel({
     imgWidth: 280,
-    elSlider: 4,
+    elSlider: 3,
     textColor: '#448834',
     borderColor: '#аа6534',
-    backgrArrow: '#448834',
-    speedSlider: 1000
+    backgrArrow: '#448834'
     });
 	
 
 var profile = $('#profile').html();
 var users = {
       name: 'Петров Петр Петрович',
-      users__photo: 'img/image_student.jpg',
+      users__photo: 'src/img/image_student.jpg',
       study_place: 'Студент курса Frontend GoForIT#2GoIT',
       phone: '+38(062)XXX-XX-XX',
       facebook_url: 'https://www.facebook.com/tatyana.khokhlova.79',
